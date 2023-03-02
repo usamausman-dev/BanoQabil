@@ -1,0 +1,15 @@
+div {
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    color: white;
+}
+
+.mytext{
+    border: 3px solid red;
+    width: 300px;
+    height: 200px;
+    /* margin: 200px auto; */
+    /* top/bottom right/left */
+    /* padding: 0 10px; */
+}

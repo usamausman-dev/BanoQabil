@@ -1,0 +1,66 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap'); */
+/* 
+body{
+    font-family: 'Climate Crisis', cursive;
+} */
+/* div{
+    height: 50vh;
+    width: 50%;
+    color: white;
+    background-color: blue; */
+    
+    /* border-color: red;
+    border-width: 12px;
+    border-style: double; */
+/* } */
+
+p{
+    overflow-y: auto;
+    color: red;
+    font-size: 30px;
+    width: 200px;
+    height: 200px;
+    font-weight: 700;
+    background-color: yellow;
+    border: 2px solid red;
+    /* border-radius: 20px; */
+    border-top-left-radius:20px ;
+    /* padding: top-bottom left-right ; */
+    padding: 0px 0 0px 40px;
+    /* padding:top right bottom left ; */
+    text-align: justify;
+    text-shadow: 0px 30px 5px gray;
+    /* text-shadow: x y blur color  */
+
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+
+/* div p{
+    color: yellow;
+    font-style: italic;
+}
+
+div p.para{
+    font-size: 50px;
+} */
+ 
+span{
+    color: #fff;
+    border: 2px solid yellow;
+    text-decoration: line-through;
+    
+    /* margin: 50px; */
+    
+} 
+
+.copyrights{
+    background-color: #000;
+    color: #fff;
+    margin: 50px;
+    text-align: center;
+}
+
+span:hover{
+    font-size: 40px;
+    background-color: yellowgreen;
+}
