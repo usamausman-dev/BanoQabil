@@ -1,0 +1,83 @@
+.parent{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    display: grid;
+    /* grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px */
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 40px;
+    column-gap: 10px;
+    /* justify-items: center;
+    align-items: center; */
+    /* place-items: center; */
+
+}
+
+.items{
+    background-color: red;
+    border: 2px solid black;
+    height: 150px;
+    width: 150px;
+}
+
+.merged{
+
+    /* align-self: center;
+    justify-self: center; */
+    place-self: center;
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+
+    /* grid-column:1/span 3 ; */
+
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+}
+
+/* .rowmerged{
+    grid-row-start: 3;
+    grid-row-end: 5;
+} */
+
+
+
+
+/* 320px — 480px: Mobile devices. */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    nav {
+        background-color: red;
+    }
+
+
+    .parent{
+     
+        grid-template-columns: repeat(2,1fr);
+    
+    }
+}
+
+/* 481px — 768px: iPads, Tablets. */
+
+@media (min-width: 481px) and (max-width: 768px) {
+    nav {
+        background-color: blue;
+    }
+}
+
+
+/* 769px — 1024px: Small screens, laptops. */
+@media (min-width: 769px) and (max-width: 1024px) {
+    nav {
+        background-color: green;
+    }
+}
+
+/* 1025px — 1200px: Desktops, large screens. */
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    nav {
+        background-color: yellow;
+    }
+}
