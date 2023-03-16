@@ -1,0 +1,136 @@
+.parent {
+    background-color: #000;
+    height: 100vh;
+    border: 1px solid blue;
+    width: 100%;
+    display: flex;
+    /* flex-direction: column-reverse; */
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* flex-flow: column wrap-reverse; */
+    /* flex-flow: column-reverse wrap-reverse; */
+}
+
+.child {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border: 1px solid red;
+    margin: 10px;
+}
+
+.target {
+    /* font-size: 3em; */
+    /* order: 3; */
+    /* flex-grow: 2; */
+    /* flex-shrink: 2;
+    align-self: flex-start; */
+}
+
+.myorder {
+    /* order: 2; */
+    /* flex-grow: 4; */
+}
+
+
+.anim {
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid red; */
+    position: relative;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEORx6t_H7-J-aKrIZbDecJr5LrRAO2L9lMQ&usqp=CAU');
+
+    /* animation-name: banoqabil;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; */
+
+}
+
+@keyframes banoqabil {
+    0% {
+        /* background-color: aqua; */
+        /* top: 0;
+        left: 0; */
+    }
+
+    25%{
+        /* background-color: green; */
+        /* top: 10px;
+        left: 10px; */
+        /* transform: rotate(30deg); */
+        transform: scale(50%);
+
+    }
+
+    50%{
+        /* top: 200px;
+        left: 100px; */
+        /* background-color: orange; */
+        transform: rotate(60deg);
+
+    }
+
+    75%{
+        transform: rotate(120deg);
+
+    }
+
+    100% {
+        /* background-color: red; */
+        /* top: 0;
+        left: 0; */
+        transform: rotate(360deg);
+
+    }
+
+}
+
+.card{
+    width: 100%;
+    height: 35vh;
+    background-color: white;
+    box-shadow: 10px 10px 10px 10px whitesmoke;
+    border-radius: 10%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 5%;
+    row-gap: 5%;
+}
+
+.flex{
+    display: flex;
+    /* background-color: aqua; */
+    align-items: center;
+    margin: 15px 20px;
+
+}
+
+.image img{
+    width: 40px;
+    border-radius: 50%;
+
+}
+
+.image{
+    /* background-color: aquamarine; */
+}
+
+.text{
+    /* background-color: red; */
+    flex-grow: 2;
+    /* background-color: antiquewhite; */
+    margin-left: 10px;
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    border-radius: 10% 78% 10% 79% / 10% 77% 10% 57% ;
+}
