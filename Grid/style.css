@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section h1,
+section p {
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+
+}
+
+section {
+    background-color: #000;
+    padding: 2%;
+}
+
+.parent {
+    height: 500px;
+    width: 100%; 
+    display: grid;
+    /* grid-template-columns: 133px 133px 133px; */
+    grid-template-columns: repeat(4, 1fr);
+    /* row-gap: 10px;
+    column-gap: 50px; */
+    gap: 10px;
+    /* justify-items: center;
+    align-items: center; */
+    /* place-items: center; */
+}
+
+
+.child {
+    background-color: #fff;
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    position: relative;
+
+}
+
+.merge {
+
+    /* animation-name: banoqabil; */
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    /* animation-iteration-count: infinite; */
+    /* grid-column-start: 1;
+    grid-column-end: 3;
+
+
+    grid-row-start: 2;
+    grid-row-end: 5; */
+
+    /* 
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 3; */
+
+    /* justify-self: center;
+    align-self: center; */
+    /* place-self: center; */
+}
+
+/* .child:first-child{
+    background-color: aqua;
+}
+
+.child:last-child{
+    background-color: red;
+} */
+
+/* .child:nth-child(even){
+    background-color: aqua;
+}
+
+.child:nth-child(odd){
+    background-color: red;
+} */
+
+@keyframes banoqabil {
+    0%{
+        background-color: aquamarine;
+        top: 0;
+        left: 0;
+        /* transform: rotate(0deg); */
+        transform: scale(40%);
+    }
+
+    50%{
+        background-color: yellow;
+        top: 50px;
+        left: 50px;
+        /* transform: rotate(90deg); */
+        transform: scale(80%);
+
+
+    }
+
+    100%{
+        background-color: red;
+        top: 0;
+        left: 0;
+        /* transform: rotate(360deg); */
+        transform: scale(20%);
+
+
+    }
+    
+}
+
+.child:nth-child(4n-2){
+    background-color: aqua;
+}
+
+
+/* 320px — 480px: Mobile devices. */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 481px — 768px: iPads, Tablets. */
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .parent {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* 769px — 1024px: Small screens, laptops. */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .parent {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* 1025px — 1200px: Desktops, large screens. */
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .parent {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
